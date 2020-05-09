@@ -1,0 +1,53 @@
+body,
+html {
+  height: 100%;
+  margin: auto 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.parallax {
+  background-image: url("/static/images/background.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.greeting-container {
+  text-align: center;
+}
+
+.greeting {
+  color: white;
+  font-size: 100px;
+  display: inline-block;
+  position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(39, 37, 35);
+}
+.active {
+  background-color: 0070c0;
+  color: #f2f2f2;
+}
+
+.about-me {
+  background-color: rgb(24, 22, 22);
+}
+.about-text {
+  color: white;
+  text-align: center;
+}
