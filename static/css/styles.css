@@ -3,6 +3,7 @@ html {
   height: 100%;
   margin: auto 0;
   font-family: "Raleway", sans-serif;
+  background-color: #181818;
 }
 
 .parallax {
@@ -44,10 +45,21 @@ html {
   color: #f2f2f2;
 }
 
-.about-me {
-  background-color: rgb(24, 22, 22);
-}
 .about-text {
-  color: white;
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.main {
+  flex: 1;
   text-align: center;
+  color: white;
+}
+.main h1 {
+  font-size: 10rem;
+}
+
+.image {
+  flex: 1;
+  width: 100 vw;
 }
