@@ -83,6 +83,9 @@ html {
 #about {
   text-align: center;
 }
+.about-img {
+  display: inline;
+}
 #about h1 {
   font-size: 100px;
 }
