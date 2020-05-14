@@ -6,31 +6,7 @@ html {
   background-color: #181818;
 }
 
-.index {
-  background: url("/static/images/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-}
-.greeting-container {
-  text-align: center;
-}
-
-.greeting {
-  color: white;
-  font-size: 6.5vw;
-  display: inline-block;
-  position: relative;
-}
-
-.greeting-container img {
-  width: 100%;
-  max-width: 300;
-  height: auto;
-}
-
+/* Nav Bar */
 .topnav {
   overflow: hidden;
 }
@@ -80,16 +56,47 @@ html {
     text-align: left;
   }
 }
-#about {
+
+/* Index Page */
+.index {
+  background: url("/static/images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.greeting-container {
   text-align: center;
 }
-.about-img {
-  display: inline;
+
+.greeting {
+  color: white;
+  font-size: 6.5vw;
+  display: inline-block;
+  position: relative;
 }
-#about h1 {
+
+.greeting-container img {
+  width: 100%;
+  max-width: 300;
+  height: auto;
+}
+
+/* About Me Page */
+
+.row {
+  color: white;
+}
+.row h1 {
   font-size: 100px;
 }
 
+.row p {
+  margin-top: 5%;
+}
+
+/* Resume Page */
 .resume {
   text-align: center;
 }
@@ -113,6 +120,8 @@ html {
 .btn a {
   color: white;
 }
+
+/* Tech Projects Page */
 .column {
   margin-left: auto;
   margin-right: auto;
@@ -133,27 +142,29 @@ html {
   float: right;
   color: white;
 }
-.row {
+.row-tech {
   padding-bottom: 1%;
 }
-.row:after {
+.row-tech:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Graphics Project Page */
+.container-art {
+  width: 98%;
+  margin: 1%;
+}
 .column-art {
   position: relative;
-  margin-left: 10%;
-  margin-right: auto;
   display: inline-block;
-  width: 33.3%;
 }
 
-.row-art:after {
-  content: "";
-  display: table;
-  clear: both;
+.row-art {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .responsive {
@@ -165,61 +176,8 @@ html {
   color: white;
   padding-top: 2%;
 }
-@media screen and (max-width: 1500px) {
-  .row {
-    text-align: center;
-  }
-  .column-art,
-  .column {
-    width: 50%;
-  }
 
-  .left,
-  .right {
-    float: none;
-    display: inline;
-  }
-  .right {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .row {
-    text-align: center;
-  }
-  .column-art,
-  .column {
-    width: 75%;
-  }
-  .left,
-  .right {
-    float: none;
-    display: inline;
-  }
-  .right {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .row {
-    text-align: center;
-  }
-  .column-art,
-  .column {
-    width: 75%;
-  }
-  .left,
-  .right {
-    float: none;
-    display: inline;
-  }
-  .right {
-    margin-left: 30%;
-  }
-}
-
+/* Contact Page */
 .hero-image {
   background-image: url("/static/images/contact-banner.jpg");
   height: 50%;
@@ -239,4 +197,65 @@ html {
   display: inline-block;
   padding-right: 10%;
   padding-top: 5%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1500px) {
+  .row-tech {
+    text-align: center;
+  }
+  .column {
+    width: 50%;
+  }
+  .column-art {
+    width: 100%;
+  }
+  .left,
+  .right {
+    float: none;
+    display: inline;
+  }
+  .right {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .row-tech {
+    text-align: center;
+  }
+  .column {
+    width: 75%;
+  }
+  .column-art {
+    width: 100%;
+  }
+  .left,
+  .right {
+    float: none;
+    display: inline;
+  }
+  .right {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row-tech {
+    text-align: center;
+  }
+  .column {
+    width: 75%;
+  }
+  .column-art {
+    width: 100%;
+  }
+  .left,
+  .right {
+    float: none;
+    display: inline;
+  }
+  .right {
+    margin-left: 30%;
+  }
 }
