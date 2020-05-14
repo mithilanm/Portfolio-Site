@@ -4,7 +4,6 @@ html {
   margin: auto 0;
   font-family: "Raleway", sans-serif;
   background-color: #181818;
-  box-sizing: border-box;
 }
 
 .index {
@@ -13,6 +12,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 .greeting-container {
   text-align: center;
@@ -20,7 +20,7 @@ html {
 
 .greeting {
   color: white;
-  font-size: 6vw;
+  font-size: 6.5vw;
   display: inline-block;
   position: relative;
 }
@@ -80,26 +80,35 @@ html {
     text-align: left;
   }
 }
-
-.about-text {
-  display: inline-flex;
-  vertical-align: top;
-  margin-left: 5%;
-}
-
-.main {
-  flex: 1;
+#about {
   text-align: center;
-  color: white;
 }
-.main h1 {
-  font-size: 10rem;
+#about h1 {
+  font-size: 100px;
 }
 
-.main image {
-  flex: 1;
-  width: 10px;
+.resume {
+  text-align: center;
+}
+.resume-page {
   margin-top: 2%;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #0070c0;
+  border-color: #0070c0;
+}
+.btn {
+  display: inline;
+}
+.btn a {
+  color: white;
 }
 .column {
   margin-left: auto;
@@ -132,7 +141,6 @@ html {
 
 .column-art {
   position: relative;
-  float: left;
   margin-left: 10%;
   margin-right: auto;
   display: inline-block;
@@ -155,6 +163,9 @@ html {
   padding-top: 2%;
 }
 @media screen and (max-width: 1500px) {
+  .row {
+    text-align: center;
+  }
   .column-art,
   .column {
     width: 50%;
@@ -163,8 +174,7 @@ html {
   .left,
   .right {
     float: none;
-    text-align: center;
-    width: 100%;
+    display: inline;
   }
   .right {
     margin-left: 30%;
@@ -172,6 +182,9 @@ html {
 }
 
 @media screen and (max-width: 750px) {
+  .row {
+    text-align: center;
+  }
   .column-art,
   .column {
     width: 75%;
@@ -179,8 +192,7 @@ html {
   .left,
   .right {
     float: none;
-    text-align: center;
-    width: 100%;
+    display: inline;
   }
   .right {
     margin-left: 30%;
@@ -188,6 +200,9 @@ html {
 }
 
 @media screen and (max-width: 500px) {
+  .row {
+    text-align: center;
+  }
   .column-art,
   .column {
     width: 75%;
@@ -195,8 +210,7 @@ html {
   .left,
   .right {
     float: none;
-    text-align: center;
-    width: 100%;
+    display: inline;
   }
   .right {
     margin-left: 30%;
