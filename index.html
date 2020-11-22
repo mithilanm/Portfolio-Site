@@ -3,6 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/3ced957014.css" media="all">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,21 +17,32 @@
     />
   </head>
   <body class="index">
-    <div class="topnav" id="Topnav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a class="active" href="/">Home</a>
       <a href="about">About Me</a>
-      <a href="resume">Resume</a>
-      <a href="tech-projects">Tech Projects</a>
-      <a href="graphic-projects">Graphic Projects</a>
-      <a href="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+      <a href="resume">Experience</a>
       </a>
     </div>
+    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="greeting-container">
       <h2 class="greeting">Hello I'm Mithilan Muralitharan</h2>
       <div>
         <img src="static/images/Profile.png" alt="" />
+      </div>
+      <div class="btn-group buffer">
+        <center>
+          <a href="mailto:mithilanmurali@gmail.com" class="btn btn-lg btn-danger outline" target="_blank" id="email"><i
+              class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+          <!-----
+          <a href="tel:6478301725" class="btn btn-lg btn-info outline"
+            target="_blank" id="phone"><i class="fa fa-phone" aria-hidden="true"></i> Phone</a>
+          --->
+          <a href="https://www.linkedin.com/in/mithilan" class="btn btn-lg btn-warning outline" target="_blank" id="linkedin"><i
+                class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+          <a href="http://www.github.com/mithilanm" class="btn btn-lg btn-success outline" target="_blank" id="github"><i
+              class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+        </center>
       </div>
     </div>
     <script src="static/js/script.js"></script>

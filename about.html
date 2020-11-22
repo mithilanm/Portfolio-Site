@@ -17,19 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   </head>
   <body>
-    <div class="topnav" id="Topnav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="/">Home</a>
       <a class="active" href="about">About Me</a>
-      <a href="resume">Resume</a>
-      <a href="tech-projects">Tech Projects</a>
-      <a href="graphic-projects">Graphic Projects</a>
-      <a href="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+      <a href="resume">Experience</a>
       </a>
     </div>
+    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <section>
       <div class="container">
         <div class="row">
@@ -49,15 +47,7 @@
               my passion of software and design. In fact, this website was
               completely created by myself! As far as my other hobbies go I love
               working out and playing/watching basketball (huge raptors fan
-              here). In my spare time I love listening to music, primarily hip
-              hop and R&B as you can tell from my design projects. I also love
-              collecting vinyl records of my favourite albums.
-            </p>
-            <p>
-              On this website, you can find my resume as well as media on some
-              of the projects I have worked on over the years, described in my
-              resume. In addition, I have provided contact information where you
-              can contact me.
+              here). 
             </p>
           </div>
           <div class="col-md-6">
@@ -67,7 +57,23 @@
               class="img-fluid"
             />
           </div>
-        </div>
+    </section>
+    <section> 
+      <div class="container">
+        <h2>These are the technologies I am comfortable working with:</h2>
+        <div class="row">
+          <div class="col-3 mb-4"><i class="devicon-html5-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-css3-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-bootstrap-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-javascript-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-python-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-c-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-react-original"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-nodejs-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-php-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-mysql-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-git-plain"></i></div>
+          <div class="col-3 mb-4"><i class="devicon-amazonwebservices-original"></i></i></div>
       </div>
     </section>
     <script src="static/js/script.js"></script>
